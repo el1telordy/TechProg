@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 
 public class CalculateInterestRates {
     public static double calculateRatesForDay(Account account) {
-        DecimalFormat df = new DecimalFormat("#.##");
+        DecimalFormat df = new DecimalFormat("#,##");
         if (account instanceof AccountCredit) {
             return 0;
         } else if (account instanceof AccountDepos) {
