@@ -8,7 +8,6 @@ import com.itmo.utils.Account.AccountDepos;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Application {
 
@@ -77,17 +76,11 @@ public class Application {
 
         System.out.println("Debt1 transactions after cancelling " + accountDebt1.getTransactions());
 
-//        sber.skipTime(6);
-//        System.out.println(accountDebt1.getBalance());
-
         System.out.println(accountDebt1.getClient());
         System.out.println();
 
         accountDepos2.addFunds(300000);
         accountDepos2.skipTime(LocalDate.of(2022, 4, 2));
         System.out.println("Depos2 balance after time " + accountDepos2.getBalance());
-
-//        accountCredit3.withdrawFunds(10000);
-//        System.out.println("credit3 balance " + accountCredit3.getBalance());
     }
 }
